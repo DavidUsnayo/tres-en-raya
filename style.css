@@ -1,0 +1,208 @@
+*{padding: 0;
+  margin: 0;
+  font-family:helvetica;
+}
+
+:root{
+    --principal:#192A32;
+    --segundo:#1F3540;
+    --tercero:#30C3BD;
+    --cuarto:#F2B238;
+    --quinto:#A8BEC9;
+}
+body{
+    background:var(--principal);
+}
+.container{
+    height:100vh;
+    padding:10px;
+    display:flex;
+}
+
+.section-uno{
+    padding:10px;
+    width:400px;
+    margin:auto;
+}
+
+.menos{
+    display:flex;
+    align-items:Center;
+}
+
+.turno{
+    background:var(--segundo);
+    color:var(--quinto);
+    padding:0px 10px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+}
+
+span{
+    font-size:30px;
+}
+
+.tic_tac{
+    border-radius:10px;
+    margin:20px 0px;
+}
+
+.tic_1{
+    display:flex;
+    justify-content:space-between;
+}
+
+.caja{
+    margin:10px;
+    border-radius:15px;
+    background:var(--segundo);
+    width:120px;
+    height:120px;
+    font-size:80px;
+    color:rgb(255, 88, 88);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0px 7px 2px rgb(31, 31, 31);
+}
+
+.circle{
+    width:40px;
+    height:40px;
+    border:15px solid var(--cuarto);
+    border-radius:50%;
+}
+
+.cruz-1{
+    width:80px;
+    height:15px;
+    background:var(--tercero);
+    border-radius:40px;
+    transform:rotate(45deg);
+    position:absolute;
+}
+
+.cruz-2{
+    width:80px;
+    height:15px;
+    background:var(--tercero);
+    border-radius:40px;
+    transform:rotate(-45deg)
+}
+
+.button{
+    background:var(--quinto);
+    padding:10px 20px;
+    border-radius:10px;
+    border:0;
+}
+img{
+    transition:1s;
+}
+
+.size{
+    zoom:0.5;
+}
+.size_2{
+    zoom:0.8;
+}
+
+.jugador{
+    width:120px;
+    height:60px;
+    background:rgb(235, 141, 235);
+    border-radius:15px;
+    margin:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    color:var(--principal);
+}
+
+.jugador p{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.tic_1 .jugador:nth-child(1){
+    background:var(--tercero);
+}
+.tic_1 .jugador:nth-child(2){
+    background:var(--quinto);
+}
+.tic_1 .jugador:nth-child(3){
+    background:var(--cuarto);
+}
+
+.dialog{
+    width:100%;
+    height:250px;
+    margin:auto;
+    border:0;
+    border-radius:10px;
+}
+.dialog::backdrop{
+    background:rgba(0, 0, 0, 0.356);
+}
+.dialog-section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    background:#1F3540;
+}
+.dialog-contenido p{
+    text-align:center;
+    font-weight:bold;
+    color:rgb(240, 240, 240);
+}
+.ronda{
+    display:flex;
+    align-items:center;
+    margin:20px 0px;
+}
+.ronda h2{
+    font-size:40px;
+    color:var(--tercero);
+    padding-left:12px;
+    margin:auto;
+}
+.botones{
+    display:flex;
+    justify-content:center;
+}
+.botones button{
+    margin:10px;
+    padding:13px 20px;
+    border-radius:10px;
+    border:0;
+    font-size:16px;
+    font-weight:bold;
+    color:var(--principal);
+    box-shadow:0px 7px 3px rgb(29, 29, 29);
+}
+.cerrar{
+    background:var(--quinto);
+}
+.siguiente{
+    background:var(--cuarto);
+}
+.section-uno{
+    zoom:0.9;
+}
+
+@media(min-width:1800px){
+    .section-uno{
+        zoom:1.3;
+    }
+}
+@media(max-width:600px){
+    .ronda h2{
+        font-size:30px;
+    }
+    .size_2{
+        zoom:0.6;
+    }
+}

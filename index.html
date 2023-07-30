@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic tac Toe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="section-uno">
+            <div class="tic_1">
+                <div class="menos">
+                    <div>
+                        <div class="cruz-1 size"></div> <div class="cruz-2 size"></div>
+                    </div>
+                    <div>
+                        <div class="circle size"></div>
+                    </div> 
+                </div>
+                <div class="turno">
+                    <h3> TURNO<span> _ </span> </h3>
+                </div>
+                <div>
+                    <button class="button">
+                        <img src="../asset/reiniciar.png" width="25" alt="reinicio">
+                    </button>
+                </div>
+            </div>
+            <div class="tic_tac">
+                <div class="tic_1">
+                    <div class="caja"></div>
+                    <div class="caja"></div>
+                    <div class="caja"></div>
+                </div>
+                <div class="tic_1">
+                    <div class="caja"></div>
+                    <div class="caja"></div>
+                    <div class="caja"></div>
+                </div>
+                <div class="tic_1">
+                    <div class="caja"></div>
+                    <div class="caja"></div>
+                    <div class="caja"></div>
+                </div>
+            </div>
+            <div class="tic_1">
+                <div class="jugador">
+                    <p>JUGADOR (X)</p>
+                    <h2 class="x">0</h2>
+                </div>
+                <div class="jugador">
+                    <p>EMPATE</p>
+                    <h2 class="empate">0</h2>
+                </div>
+                <div class="jugador">
+                    <p>JUGADOR (O)</p>
+                    <h2 class="o">0</h2>
+                </div>
+            </div>
+        </div>
+        <dialog class="dialog">
+            <div class="dialog-section">
+                <div class="dialog-contenido">
+                    <p>GANASTE!</p>
+                    <div class="ronda">
+                        <div class="signo">
+                            <div class="cruz-1 size_2"></div><div class="cruz-2 size_2"></div>
+                        </div>
+                        <h2 class="gano">GANO ESTA RONDA</h2>
+                    </div>
+                    <div class="botones">
+                        <button class="cerrar">CERRAR</button>
+                        <button class="siguiente">SIGUIENTE RONDA</button>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
